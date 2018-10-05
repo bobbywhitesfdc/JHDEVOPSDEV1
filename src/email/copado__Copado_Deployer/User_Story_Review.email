@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Request for Review for User Story:&nbsp;&nbsp;{!copado__User_Story__c.Name}&nbsp;<div><br></div><div>Title: &nbsp;{!copado__User_Story__c.copado__User_Story_Title__c}</div><div>Project: &nbsp;{!copado__User_Story__c.copado__Project__c}</div><div>Release:&nbsp;{!copado__User_Story__c.copado__Release__c}</div><div>Environment:&nbsp;{!copado__User_Story__c.copado__Environment__c}</div><div><br></div><div>Owner: &nbsp;{!copado__User_Story__c.OwnerFullName}</div><div><br></div><div>Story attributes:</div><div><br></div><div>Commit Count: &nbsp;{!copado__User_Story__c.CommitCount__c}</div><div><br></div><div>Metdata Types:&nbsp;{!copado__User_Story__c.copado__Metadata_Types_in_Selection__c}</div><div><br></div><div>Has Apex Code?: &nbsp;{!copado__User_Story__c.copado__Has_Apex_Code__c}</div><div><br></div><div><br></div>]]></td>
+</tr>
+</table>

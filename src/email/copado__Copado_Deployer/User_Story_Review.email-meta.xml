@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>User Story Review and Approval Request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>JHAdministration</letterhead>
+    <name>User Story Review Requested</name>
+    <style>freeForm</style>
+    <subject>User Story Review  {!copado__User_Story__c.Name} - {!copado__User_Story__c.copado__User_Story_Title__c}</subject>
+    <textOnly>Request for Review for User Story:  {!copado__User_Story__c.Name}
+
+Title:  {!copado__User_Story__c.copado__User_Story_Title__c}
+Project:  {!copado__User_Story__c.copado__Project__c}
+Release: {!copado__User_Story__c.copado__Release__c}
+Environment: {!copado__User_Story__c.copado__Environment__c}
+
+Owner:  {!copado__User_Story__c.OwnerFullName}
+
+Story attributes:
+
+Commit Count:  {!copado__User_Story__c.CommitCount__c}
+
+Metdata Types: {!copado__User_Story__c.copado__Metadata_Types_in_Selection__c}
+
+Has Apex Code?:  {!copado__User_Story__c.copado__Has_Apex_Code__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,7 @@
+<apex:page standardController="copado__Deployment__c" recordSetVar="deployments">
+  <apex:pageBlock >
+    <apex:pageBlockTable value="{!deployments}" var="d">
+      <apex:column value="{!d.name}"/>
+    </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>

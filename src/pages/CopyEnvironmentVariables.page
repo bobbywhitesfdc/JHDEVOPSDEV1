@@ -1,0 +1,42 @@
+<apex:page standardController="copado__Environment__c"  extensions="Environment_EC"  showHeader="true" sidebar="true">
+<p><b>Environment:</b> {!recordName}</p>
+
+  <apex:dataTable value="{!targetVars}" var="current" id="targetvars" rowClasses="odd,even" styleClass="tableClass" border="1" cellpadding="1">
+     <apex:facet name="caption"><h2>Target Environment Variables</h2></apex:facet>
+     <apex:column >
+        <apex:facet name="header">Name</apex:facet>
+        <apex:outputText value="{!current.name}"/>
+     </apex:column>
+      <apex:column >
+        <apex:facet name="header">Value</apex:facet>
+        <apex:outputText value="{!current.copado__Value__c}"/>
+     </apex:column>
+  </apex:dataTable>
+
+  <apex:form id="copyVariablesForm">
+  	<apex:pageBlock >
+       <apex:pageBlockButtons >
+            <apex:commandButton value="Copy From" action="{!copy}" status="status"  reRender="targetvars"/>
+       </apex:pageBlockButtons>
+       <apex:pageBlockSection >
+        <apex:selectList label="Source" value="{!sourceEnvironment}" multiselect="false" size="1" required="true">
+            <apex:selectOptions value="{!EnvironmentSelections}"/>
+            <apex:actionSupport event="onchange" reRender="sourceVars"/>
+        </apex:selectList>
+        <apex:inputCheckbox label="Overwrite" value="{!overwrite}" id="overwriteCB"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+
+    <apex:dataTable value="{!sourceVars}" var="current" id="sourceVars" rowClasses="odd,even" styleClass="tableClass" border="1" cellpadding="1">
+     <apex:facet name="caption"><h2>Source Environment Variables</h2></apex:facet>
+     <apex:column >
+        <apex:facet name="header">Name</apex:facet>
+        <apex:outputText value="{!current.name}"/>
+     </apex:column>
+      <apex:column >
+        <apex:facet name="header">Value</apex:facet>
+        <apex:outputText value="{!current.copado__Value__c}"/>
+     </apex:column>
+  </apex:dataTable>
+</apex:page>

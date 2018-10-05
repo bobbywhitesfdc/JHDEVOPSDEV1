@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Working</fullName>
+        <color>#66FF99</color>
+        <default>false</default>
+        <label>Working</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting</fullName>
+        <color>#9999FF</color>
+        <default>false</default>
+        <label>Waiting</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <color>#000000</color>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <color>#FF6666</color>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

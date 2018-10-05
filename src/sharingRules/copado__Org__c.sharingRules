@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>OrgCred</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Default Org Credentials for unmanaged environments are shared with all Project Team Members</description>
+        <label>OrgCred</label>
+        <sharedTo>
+            <role>Project_Team_Member</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>copado__Default_Credential__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IsManaged__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

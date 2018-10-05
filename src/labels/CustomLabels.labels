@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>MSG_NO_BMGT_PERMISSIONS</fullName>
+        <categories>Deployment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Branch Management Permissions</shortDescription>
+        <value>Must have branch management permission with Allow Deployments to execute deployment to environment</value>
+    </labels>
+    <labels>
+        <fullName>MSG_PROMOTE_REQUIRED_FIELDS</fullName>
+        <categories>USERSTORY,PROMOTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Story Fields Required for Promotion</shortDescription>
+        <value>Project and Environment fields must be non-null to Promote</value>
+    </labels>
+</CustomLabels>

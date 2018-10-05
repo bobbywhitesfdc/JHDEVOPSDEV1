@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reply</value>
+        </caseValues>
+        <name>publisher_email</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reply</value>
+        </caseValues>
+        <name>publisher_portal</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Company</value>
+        </caseValues>
+        <name>web_company_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Email</value>
+        </caseValues>
+        <name>web_email_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Name</value>
+        </caseValues>
+        <name>web_name_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Phone</value>
+        </caseValues>
+        <name>web_phone_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Origin --></label>
+        <name>Case_origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Deployment --></label>
+        <name>Related_Deployment__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related User Story --></label>
+        <name>Related_User_Story__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Chat --></label>
+        <name>Chat</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community --></label>
+        <name>Community</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Copado Service Requests --></description>
+        <label><!-- Copado --></label>
+        <name>Copado</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Phone --></label>
+        <name>Phone</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Social --></label>
+        <name>Social</name>
+    </recordTypes>
+</CustomObjectTranslation>

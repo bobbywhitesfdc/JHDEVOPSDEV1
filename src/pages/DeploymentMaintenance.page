@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="copado__Deployment__c">
+   <apex:detail relatedList="true" showChatter="true" />
+</apex:page>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Commiting Files</label>
+                <name>Commiting_Files</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Creating User Stories</label>
+                <name>Creating_User_Stories</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Review</label>
+                <name>Review</name>
+            </dataCategory>
+            <label>Copado User Story</label>
+            <name>Copado_User_Story</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Git Source Control</label>
+            <name>Git_Source_Control</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Backporting</label>
+                <name>Backporting</name>
+            </dataCategory>
+            <dataCategory>
+                <label>CBM Setup</label>
+                <name>CBM_Setup</name>
+            </dataCategory>
+            <label>Copado Branch Management</label>
+            <name>Copado_Branch_Management</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Copado Deployments</label>
+            <name>Copado_Deployments</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Copado Promotions</label>
+            <name>Copado_Promotions</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>Copado Release Management Product Usage</description>
+    <label>Copado Usage</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

@@ -1,0 +1,49 @@
+<apex:page controller="UserStoryReview_CC" showHeader="true" sidebar="true">
+  <h1>User Story Review Page</h1>
+  <p>Name: {!RecordName}
+  </p>
+
+  <br/>
+
+  <apex:pageMessages />
+
+  <apex:form id="reviewForm">
+  <apex:pageBlock >
+    <apex:pageBlockButtons >
+      <apex:commandButton id="previousButton" value="Previous" tabindex="0" accesskey="p" rendered="{!hasPrevious}" action="{!previous}" reRender="reviewForm" title="Backup to the Previous page"/>
+      <apex:commandButton id="nextButton" value="Next" tabindex="1" accesskey="n" rendered="{!hasNext}" action="{!next}" reRender="reviewForm" title="Advance to the next page" />
+    </apex:pageBlockButtons>
+    <p> Page Index: {!currentPage} of {!maxPage}</p>
+
+    <apex:dataTable value="{!GitMetadataSelections}" var="current" id="GitSelectionsTable" rowClasses="odd,even" styleClass="tableClass" border="1" cellpadding="1">
+       <apex:facet name="caption"><h2>Git Metdata Selections</h2></apex:facet>
+       <apex:column >
+          <apex:facet name="header">Type</apex:facet>
+          <apex:outputText value="{!current.t}"/>
+       </apex:column>
+        <apex:column >
+          <apex:facet name="header">Name</apex:facet>
+          <apex:outputText value="{!current.n}"/>
+       </apex:column>
+        <apex:column >
+          <apex:facet name="header">Retrieve-Only?</apex:facet>
+          <apex:outputText value="{!current.r}"/>
+       </apex:column>
+        <apex:column >
+          <apex:facet name="header">Modified By</apex:facet>
+          <apex:outputText value="{!current.b}"/>
+       </apex:column>
+        <apex:column >
+          <apex:facet name="header">Modified Date</apex:facet>
+          <apex:outputText value="{!current.d}"/>
+       </apex:column>
+        <apex:column >
+          <apex:facet name="header">User Stories</apex:facet>
+          <apex:outputText value="{!current.userStoryReferences}"/>
+       </apex:column>
+    </apex:dataTable>
+  </apex:pageBlock>
+  </apex:form>
+
+  
+</apex:page>

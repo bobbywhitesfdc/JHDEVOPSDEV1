@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ProjectTeamMembers_on_CBM_Repo</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Project Team Members must have write access in order to update Attachments on Repository for Cache state -- only applies to CBM (non-backup) repositories</description>
+        <label>ProjectTeam Members on CBM Repo</label>
+        <sharedTo>
+            <role>Project_Team_Member</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsBackupsOnly__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>
